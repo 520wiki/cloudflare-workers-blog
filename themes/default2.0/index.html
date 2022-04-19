@@ -91,17 +91,6 @@
     }
 }
 
-if (getCookie("style") == null) {
-    setCookie("style", web_style)
-    updateStyle();
-} else if (getCookie("style") == "white") {
-    setCookie("style", "white")
-    updateStyle();
-} else if (getCookie("style") == "black") {
-    setCookie("style", "black")
-    updateStyle();
-}
-
 $("#update_style").change(function() {
     var style = $("#update_style").is(':checked');
     if (style) {
